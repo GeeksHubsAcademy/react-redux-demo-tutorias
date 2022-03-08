@@ -1,0 +1,12 @@
+.Counter {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Counter li {
+    color: red;
+}
