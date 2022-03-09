@@ -1,15 +1,21 @@
 import './App.css';
 
 import SideBar from './SideBar';
-import Counter from './Counter';
+import Counter from './ShowCounter';
+
+import { Provider } from "react-redux"
+import { store } from './store'
+
 
 
 function App() {
   return (
-    <div className="App">
-      <SideBar />
-      <Counter />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <SideBar />
+        <Counter />
+      </div>
+    </Provider>
   );
 }
 
